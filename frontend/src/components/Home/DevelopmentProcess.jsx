@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import Image from "next/image"; 
+import Image from "next/image";
 import infineImg from '../../assets/img/infine img2.png.png';
 
 import research from "../../assets/img/Development Process/Research.png"
@@ -38,14 +38,14 @@ const DevelopmentProcess = () => {
 
   return (
     <div className="relative containerbg   w-full overflow-hidden lg:rounded-tl-[150px] rounded-tl-[50px]  ">
-      <section className='pt-0 md:pt-[50px] z-[8888] max-w-[99rem] mx-auto mb-20  '>
+      <section className='pt-0 md:pt-[50px] z-8888 max-w-396 mx-auto mb-20  '>
         <div className="relative w-full">
           <div className="relative px-3 lg:px-0 py-10 w-full flex lg:w-[80%] xl:w-full flex-col items-stretch
            justify-center m-auto z-100">
             <div className="flex flex-col xl:flex-row w-full gap-10 3xl:gap-[100px]">
-              
+
               <div className="w-full xl:flex-[40%] xl:order-1 ">
-                <div className="pb-[50px] sm:pb-[80px]">
+                <div className="pb-[50px] sm:pb-20">
                   <h1 className='text-3xl sm:text-4xl md:text-5xl 3xl:text-6xl font-bold text-white'>
                     Our Software Development Process:
                   </h1>
@@ -58,7 +58,7 @@ const DevelopmentProcess = () => {
 
                   {/* ==================img section======================== */}
                   <Image
-                    className='infineUm-image-animation 3xl:mt-0 w-full object-cover 
+                    className='infineUm-image-animation 3xl:mt-0 w-full object-cover
                     opacity-[0.8] 3xl:w-[800px] h-fit'
                     src={infineImg.src}
                     alt="infine"
@@ -67,7 +67,7 @@ const DevelopmentProcess = () => {
                     priority
                   />
 
-                  {[ 
+                  {[
                     {id: 1, src: research, top:'3%', left:'14%', bg:'#00897D'},
                     {id: 2, src: design, top:'62%', right:'26%', bg:'#38A0E0'},
                     {id: 3, src: development, top:'28%', right:'0%', bg:'#36D4C3'},
@@ -79,7 +79,7 @@ const DevelopmentProcess = () => {
                     <Image
                       key={icon.id}
                       onClick={() => toggleSection(icon.id)}
-                      className='animat-bg absolute w-[25px] h-[25px] sm:w-[50px] 
+                      className='animat-bg absolute w-[25px] h-[25px] sm:w-[50px]
                       sm:h-[50px] object-cover rounded-full p-1 sm:p-3 shadow-lg
                       shadow-gray-500 cursor-pointer'
                       src={icon.src}
@@ -98,7 +98,7 @@ const DevelopmentProcess = () => {
                 </div>
               </div>
 
-              <div className="w-full xl:flex-[50%] xl:order-2 pt-[0px]">
+              <div className="w-full xl:flex-[50%] xl:order-2 pt-0">
 
                 {/*================= card section================== */}
                 <div className="xl:mt-[250px] flex justify-center px-4 lg:px-6 relative items-center">
@@ -117,7 +117,7 @@ const DevelopmentProcess = () => {
                     ))}
 
                     {activeItem && (
-                      <div className="relative w-full rounded-3xl containerbg border border-s-teal-500 px-8 py-10 shadow-2xl transition-all duration-500 hover:scale-[1.02] z-[5]">
+                      <div className="relative w-full rounded-3xl containerbg border border-s-teal-500 px-8 py-10 shadow-2xl transition-all duration-500 hover:scale-[1.02] z-5">
                         <div className="flex items-center justify-center gap-4 mb-6">
                           <Image
                             src={activeItem.image}

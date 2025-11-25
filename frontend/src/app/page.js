@@ -1,3 +1,4 @@
+"use client";
 import DevelopmentProcess from "@/components/Home/DevelopmentProcess";
 import { Hero } from "@/components/Home/Hero";
 import WhyChoose from "@/components/Home/WhyChoose";
@@ -12,12 +13,12 @@ export default function Home() {
         <WhyChoose />
       </div>
 
-      
+
       <div className="bg-white">
         <DevelopmentProcess />
       </div>
      </div>
-     
+
 
     </div>
   );
