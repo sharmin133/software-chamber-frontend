@@ -14,8 +14,8 @@ export const Hero = () => {
 
   return (
     <div className="relative w-full overflow-hidden bg-white">
-      
-      <div className="relative w-full border-t-8 border-l-8 border-r-8 border-white 
+
+      <div className="relative w-full border-t-8 border-l-8 border-r-8 border-white
         overflow-hidden rounded-br-[150px]">
 
         {/* HERO CONTENT */}
